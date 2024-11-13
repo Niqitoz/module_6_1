@@ -9,10 +9,10 @@ class Animal:
         isinstance(food, Plant)
         if food.edible:
             print(f"{self.name} съел {food.name}")
-            self.fed == True
+            self.fed = True
         else:
             print(f"{self.name} не стал есть {food.name}")
-            self.alive == False
+            self.alive = False
 
 class Plant:
     edible = False
