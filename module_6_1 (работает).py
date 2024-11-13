@@ -1,6 +1,7 @@
 class Animal:
     alive = True
     fed = False
+
     def __init__(self, name):
         self.name = str(name)
 
@@ -8,10 +9,10 @@ class Animal:
         isinstance(food, Plant)
         if food.edible:
             print(f"{self.name} съел {food.name}")
-            self.fed = True
+            self.fed == True
         else:
             print(f"{self.name} не стал есть {food.name}")
-            self.alive = False
+            self.alive == False
 
 class Plant:
     edible = False
@@ -19,6 +20,7 @@ class Plant:
         self.name = str(name)
 
 class Mammal(Animal):
+
     pass
 
 class Predator(Animal):
